@@ -33,6 +33,7 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+
 html,
 body,
 div,
@@ -386,7 +387,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #ff589e;
+  background-color: #ff7a0f;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -397,7 +398,7 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #0044ff83;
 }
 
 a.main-button {
@@ -889,7 +890,7 @@ features
 parallax & home seperator
 --------------------------------------------- 
 */
-.mini {
+.services {
   min-height: 215px;
   overflow: hidden;
   position: relative;
@@ -897,7 +898,7 @@ parallax & home seperator
   padding-bottom: 90px;
 }
 
-.mini:before {
+.services:before {
   content: "";
   position: absolute;
   width: 140%;
@@ -906,39 +907,39 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  background-image: url("../images/work-process-bg1.png");
   z-index: 2;
   top: -20%;
   left: -20%;
 }
 
-.mini .mini-content {
+.services .container {
   position: relative;
   z-index: 3;
 }
 
-.mini .mini-content .info {
+.services .container .info {
   text-align: center;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.mini .mini-content .info small {
+.services .container .info small {
   display: block;
   font-weight: 400;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
-.mini .mini-content .info strong {
+.services .container .info strong {
   font-weight: 700;
   font-size: 17px;
   margin-bottom: 40px;
   display: block;
 }
 
-.mini .mini-content .info h1 {
+.services .container .info h2 {
   color: #fff;
   font-weight: 500;
   font-size: 28px;
@@ -946,7 +947,7 @@ parallax & home seperator
   margin-bottom: 30px;
 }
 
-.mini .mini-content .info p {
+.services .container .info p {
   letter-spacing: 1px;
   margin-bottom: 40px;
   color: #fff;
@@ -954,10 +955,6 @@ parallax & home seperator
   line-height: 26px;
   font-weight: 400;
   font-size: 15px;
-}
-
-.mini .mini-content .info p span {
-  text-decoration: underline;
 }
 
 .mini .mini-content .mini-box {
@@ -1160,84 +1157,36 @@ team
 --------------------------------------------- 
 */
 .team-item {
+  height: 100%;
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-}
-
-.team-item:hover .team-content .team-info {
-  margin-left: 30px;
-}
-
-.team-item i {
-  display: block;
-  margin-left: 25px;
-  margin-top: 25px;
-  font-size: 30px;
-  color: #4e47de;
-  text-align: center;
-}
-
-.team-item .user-image {
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  margin-left: 25px;
-  float: left;
-}
-
-.team-item .team-content {
-  text-align: left;
-  overflow: hidden;
-}
-
-.team-item .team-content .team-info {
-  float: left;
-  margin-left: 20px;
-  margin-top: 8px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.team-item .team-content .team-info .user-name {
-  display: block;
-  font-weight: 400;
-  font-size: 17px;
-  color: #1e1e1e;
-  letter-spacing: 0.25px;
-  margin-bottom: 5px;
-}
-
-.team-item .team-content .team-info span {
-  display: block;
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff589e;
-  letter-spacing: 0.25px;
+  padding-bottom: 160px;
 }
 
 .team-item .team-content p {
+  text-align: center;
   margin-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 25px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   color: #777;
   letter-spacing: 0.6px;
   line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .team-item {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .team-item {
+    padding-bottom: 50px;
+  }
 }
 
 /* 
@@ -1287,7 +1236,7 @@ pricing
 
 .pricing-item .pricing-header .pricing-title {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 22px;
   letter-spacing: 0.25px;
   color: #1e1e1e;
   width: 180px;
