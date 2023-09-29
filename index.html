@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="icon" href="assets/images/logodef.png" />
+    <link rel="icon" href="assets/images/imgaboutuslogo.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
       rel="stylesheet"
@@ -28,7 +28,7 @@ https://templatemo.com/tm-535-softy-pinko
     />
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css" />
   </head>
 
@@ -50,21 +50,23 @@ https://templatemo.com/tm-535-softy-pinko
           <div class="col-12">
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
-              <div class="logo d-flex align-items-center">
-                <img
-                  src="./assets/images/logodef.png"
-                  class="img-fluid ImagenLogo"
-                />
-                <h1 style="margin-top: 8px">
-                  <strong>Noctex IA</strong>
-                </h1>
-              </div>
+              <a href="#welcome">
+                <div class="logo d-flex align-items-center">
+                  <img
+                    src="./assets/images/logodef.png"
+                    class="img-fluid ImagenLogo"
+                  />
+                  <h1 style="margin-top: 8px">
+                    <b>Noctex IA</b>
+                  </h1>
+                </div>
+              </a>
 
               <!-- ***** Logo End ***** -->
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li><a href="#welcome" class="active">Home</a></li>
-                <li><a href="#features">Sobre Nosotros</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Conozca al Equipo</a></li>
                 <li><a href="#blog">Blog Entries</a></li>
@@ -90,12 +92,19 @@ https://templatemo.com/tm-535-softy-pinko
             <div
               class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12"
             >
-              <h1>
-                <strong>Escala</strong> tu negocio gracias a las
-                <strong>soluciones</strong> con IA
+              <h1 class="dynamic-heading">
+                <span style="color: white"><strong>Escala</strong></span>
+                <span style="color: white">tu</span>
+                <span style="color: white">negocio</span>
+                <span style="color: white">gracias</span>
+                <span style="color: white">a</span>
+                <span style="color: white">las</span>
+                <span style="color: white"><strong>soluciones</strong></span>
+                <span style="color: white">con</span>
+                <span style="color: white">IA</span>
               </h1>
 
-              <a href="#features" class="main-button-slider">Conocer mas</a>
+              <a href="#about" class="main-button-slider">Conocer mas</a>
               <a
                 href="https://calendly.com/kpareja41"
                 class="main-button-slider"
@@ -107,6 +116,13 @@ https://templatemo.com/tm-535-softy-pinko
       </div>
       <!-- ***** Header Text End ***** -->
     </div>
+    <section class="section home-feature d-md-none">
+      <div class="col-md-12">
+        <a href="#servicios"
+          ><h1 class="arrow text-center mt-5">Servicios</h1></a
+        >
+      </div>
+    </section>
     <!-- ***** Welcome Area End ***** -->
 
     <!-- ***** Features Small Start ***** -->
@@ -114,16 +130,16 @@ https://templatemo.com/tm-535-softy-pinko
     <!-- ***** Features Small End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-top-70 padding-bottom-0" id="features">
-      <div class="container">
+    <section class="section padding-top-70 padding-bottom-0 mt-5" id="about">
+      <div class="container mt-5">
         <div class="row">
           <div
             class="col-lg-5 col-md-12 col-sm-12 align-self-center"
             data-scroll-reveal="enter left move 30px over 0.6s after 0.4s"
           >
             <img
-              src="assets/images/GIF.gif"
-              class="rounded img-fluid d-block mx-auto"
+              src="assets/images/left-image.png"
+              class="about-images rounded img-fluid mx-auto"
               alt="App"
             />
           </div>
@@ -176,12 +192,12 @@ https://templatemo.com/tm-535-softy-pinko
           </div>
           <div class="col-lg-1"></div>
           <div
-            class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+            class="col-lg-5 col-md-12 col-sm-12 d-flex align-self-center mobile-bottom-fix-big"
             data-scroll-reveal="enter right move 30px over 0.6s after 0.4s"
           >
             <img
               src="assets/images/right-image.png"
-              class="rounded img-fluid d-block mx-auto"
+              class="about-images rounded img-fluid mx-auto"
               alt="App"
             />
           </div>
@@ -191,30 +207,41 @@ https://templatemo.com/tm-535-softy-pinko
     <!-- ***** Features Big Item End ***** -->
 
     <!-- ***** Testimonials Start ***** -->
-    <section class="section services" id="servicios">
+    <section class="services my-5">
+      <div class="text-center">
+        <h1 class="dynamic-heading section-title pl-4 pr-4">
+          <span>Transforma</span> <span>tu</span> <span>negocio</span>
+          <span>con</span> <span>la</span> <span><b>magia</b></span>
+          <span>de</span> <span>la</span> <span>IA:</span> <span>somos</span>
+          <span>tu</span> <span>socio</span> <span>en</span>
+          <span><b>automatización</b></span> <span><b>inteligente.</b></span>
+        </h1>
+      </div>
+    </section>
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- Servicios START -->
+    <section class="servicios" id="servicios">
       <div class="container">
         <!-- ***** Section Title Start ***** -->
         <div class="row info">
           <div class="col-lg-12">
             <div class="center-heading">
-              <h2 class="section-title">Servicios</h2>
+              <h1 class="section-title"><b>SERVICIOS</b></h1>
             </div>
           </div>
         </div>
         <!-- ***** Section Title End ***** -->
-
-        <div class="row ">
-          <!-- ***** Testimonials Item Start ***** -->
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-            <div class="team-item">
-              <div class="team-content">
-                <div class="center-heading ">
-                  <h2 class="section-title p-2 ">
-                    Página Web & SEO
-                  </h2>
-                </div>
+        <!-- ***** Testimonials Item Start ***** -->
+        <div class="row">
+          <div class="col-xl-3 col-md-6 col-sm-12 mb-4">
+            <div class="cards">
+              <div class="text-card">
+                <h2 class="servicios-title section-title text-center p-2">
+                  Página Web & SEO
+                </h2>
                 <p>
-                  En NOCTEX.IA, optimizamos la creación de sitios web y SEO para
+                  En NOCTEX IA, optimizamos la creación de sitios web y SEO para
                   mejorar su visibilidad online. Diseño atractivo + ranking
                   superior = conexión efectiva con su target.
                 </p>
@@ -224,47 +251,56 @@ https://templatemo.com/tm-535-softy-pinko
           <!-- ***** Testimonials Item End ***** -->
 
           <!-- ***** Testimonials Item Start ***** -->
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-            <div class="team-item">
-              <div class="team-content">
-                <div class="center-heading">
-                <h2 class="section-title p-2">Consultoria <br> AI</h2>
-              </div>
-              <p>Potencie su negocio con nuestra consultoría AI. Transformamos oportunidades en soluciones inteligentes, llevando su empresa al siguiente nivel.</p>
+          <div class="col-xl-3 col-md-6 col-sm-12 mb-4">
+            <div class="cards">
+              <div class="text-card">
+                <h2 class="servicios-title section-title text-center p-2">
+                  Consultoria<br />AI
+                </h2>
+                <p>
+                  Potencie su negocio con nuestra consultoría AI. Transformamos
+                  oportunidades en soluciones inteligentes, llevando su empresa
+                  al siguiente nivel.
+                </p>
               </div>
             </div>
           </div>
           <!-- ***** Testimonials Item End ***** -->
 
           <!-- ***** Testimonials Item Start ***** -->
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-            <div class="team-item">
-              <div class="team-content">
-                <div class="center-heading">
-                  <h2 class="section-title p-2">
-                    Meta <br> ADS
-                  </h2>
+          <div class="col-xl-3 col-md-6 col-sm-12 mb-4">
+            <div class="cards">
+              <div class="text-card">
+                <h2 class="servicios-title section-title text-center p-2">
+                  Meta<br />ADS
+                </h2>
                 <p>
-                  Asegure su presencia en el metaverso. Con tácticas publicitarias punteras, hacemos que su marca brille en plataformas meta, llegando directo a su público.
+                  Asegure su presencia en el metaverso. Con tácticas
+                  publicitarias punteras, hacemos que su marca brille en
+                  plataformas meta, llegando directo a su público.
                 </p>
               </div>
             </div>
           </div>
           <!-- ***** Testimonials Item End ***** -->
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-          <div class="team-item">
-            <div class="team-content">
-              <div class="center-heading">
-              <h2 class="section-title p-2">Edicion de Contenido</h2>
-            </div>
-            <p>Potencie su negocio con nuestra consultoría AI. Transformamos oportunidades en soluciones inteligentes, llevando su empresa al siguiente nivel.</p>
+          <div class="col-xl-3 col-md-6 col-sm-12 mb-4">
+            <div class="cards">
+              <div class="text-card">
+                <h2 class="servicios-title section-title text-center p-2">
+                  Edicion de Contenido
+                </h2>
+                <p>
+                  Precisión en cada palabra. En NOCTEX IA, elevamos la calidad
+                  de su contenido, asegurando mensajes que captan y retienen la
+                  atención de su audiencia.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ***** Testimonials End ***** -->
+    <!-- Servicios END -->
 
     <!-- ***** Pricing Plans Start ***** -->
     <section class="section colored" id="nosotros">
@@ -287,45 +323,45 @@ https://templatemo.com/tm-535-softy-pinko
           >
             <div class="pricing-item">
               <div class="pricing-header">
-                <h3 class="pricing-title">Juan Manuel RP </h3>
+                <h3 class="pricing-title">Juan Manuel RP</h3>
               </div>
               <div class="center-text">
-              <p style="font-size: 25px;">Jefe de Operaciones</p>
-            </div>
+                <p style="font-size: 25px">Jefe de Operaciones</p>
+              </div>
             </div>
           </div>
           <!-- ***** Pricing Item End ***** -->
 
           <!-- ***** Pricing Item Start ***** -->
           <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s"
-        >
-          <div class="pricing-item">
-            <div class="pricing-header">
-              <h3 class="pricing-title ">Kevin Burghardt</h3>
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s"
+          >
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h3 class="pricing-title">Kevin Burghardt</h3>
+              </div>
+              <div class="center-text">
+                <p style="font-size: 25px">Director Ejecutivo</p>
+              </div>
             </div>
-            <div class="center-text">
-            <p style="font-size: 25px;">CEO</p>
           </div>
-          </div>
-        </div>
           <!-- ***** Pricing Item End ***** -->
 
           <!-- ***** Pricing Item Start ***** -->
           <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s"
-        >
-          <div class="pricing-item">
-            <div class="pricing-header">
-              <h3 class="pricing-title ">Lautaro Mion</h3>
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s"
+          >
+            <div class="pricing-item">
+              <div class="pricing-header">
+                <h3 class="pricing-title">Lautaro Mion</h3>
+              </div>
+              <div class="center-text">
+                <p style="font-size: 25px">Desarrollador Principal</p>
+              </div>
             </div>
-            <div class="center-text">
-            <p style="font-size: 25px;">Lead Developer</p>
           </div>
-          </div>
-        </div>
           <!-- ***** Pricing Item End ***** -->
         </div>
       </div>
