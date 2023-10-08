@@ -398,7 +398,7 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #0044ff83;
+  background-color: orange;
 }
 
 a.main-button {
@@ -426,7 +426,7 @@ button.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #ff7a0f;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -882,142 +882,6 @@ parallax & home seperator
 
 /* END */
 
-.counter {
-  overflow: hidden;
-  position: relative;
-}
-
-.counter:before {
-  content: "";
-  position: absolute;
-  width: 140%;
-  height: 140%;
-  opacity: 0.9;
-  background-image: url(../images/fun-facts-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 2;
-  top: -20%;
-  left: -20%;
-}
-
-.counter .content {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-}
-
-.counter .content .count-item {
-  height: 340px;
-  position: relative;
-  float: left;
-  width: 100%;
-}
-
-.counter .content .count-item.decoration-bottom {
-  position: relative;
-}
-
-.counter .content .count-item.decoration-bottom:after {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 32px;
-  top: 160px;
-  left: 70%;
-  background: url(../images/circle-dec.png) center center no-repeat;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.counter .content .count-item.decoration-top {
-  position: relative;
-}
-
-.counter .content .count-item.decoration-top:after {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 32px;
-  top: 140px;
-  left: 70%;
-  background: url(../images/circle-dec.png) center center no-repeat;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.counter .content .count-item:hover strong {
-  margin-top: 110px;
-}
-
-.counter .content .count-item strong {
-  display: block;
-  text-align: center;
-  font-weight: 600;
-  font-size: 36px;
-  letter-spacing: 0.25px;
-  margin-bottom: 10px;
-  color: #fff;
-  margin-top: 120px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.counter .content .count-item span {
-  display: block;
-  text-align: center;
-  color: #fff;
-  font-weight: 500;
-  font-size: 17px;
-  letter-spacing: 0.25px;
-}
-
-@media (max-width: 991px) {
-  .parallax {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    min-height: auto;
-  }
-  .parallax .content {
-    position: relative !important;
-    top: 0% !important;
-    transform: perspective(1px) translateY(0%) !important;
-  }
-  .counter {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .counter .content {
-    position: relative !important;
-    top: 0% !important;
-    transform: perspective(1px) translateY(0%) !important;
-  }
-  .counter .content .count-item {
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .counter .content .count-item:hover strong {
-    margin-top: 0px;
-  }
-  .counter .content .count-item:before {
-    display: none;
-  }
-  .counter .content .count-item:after {
-    display: none;
-  }
-  .counter .content .count-item strong {
-    margin-top: 0px;
-  }
-}
-
 /* 
 ---------------------------------------------
 servicios
@@ -1030,8 +894,7 @@ section.servicios {
 .servicios-title {
   font-size: 1.8rem;
 }
-section.targets-1 {
-}
+
 .cards {
   transition: transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36);
   height: 100%;
@@ -1292,7 +1155,7 @@ contact
 .contact-form textarea {
   color: #777;
   font-size: 14px;
-  border: 1px solid #eee;
+
   width: 100%;
   height: 50px;
   outline: none;
@@ -1317,7 +1180,7 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: linear-gradient(127deg, #6053d6 0%, #140fa5 91%);
   padding-top: 30px;
 }
 
@@ -1333,9 +1196,8 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
+  color: #ffffff;
   text-align: center;
-  background-color: #fff;
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -1349,7 +1211,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background-color: orange;
   color: #fff;
 }
 
